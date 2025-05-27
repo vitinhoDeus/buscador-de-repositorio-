@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Repository Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>GitHub Repository Finder</h1>
+    <select id="language-select"></select>
+
+    <div id="status-message" class="message">Please select a language</div>
+
+    <div id="repo-card" class="repo-card hidden">
+      <a id="repo-link" href="#" target="_blank"><h2 id="repo-name"></h2></a>
+      <p id="repo-description"></p>
+      <div class="repo-info">
+        ⭐ <span id="repo-stars"></span> | 🍴 <span id="repo-forks"></span> | 🐞 <span id="repo-issues"></span>
+      </div>
+    </div>
+
+    <button id="refresh-btn" class="hidden">Refresh</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
